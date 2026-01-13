@@ -55,7 +55,8 @@ Add the following code to your `Example1` class:
    
    + What is the cause of the problems reported by the compiler, if any?
    
-     ** YOUR ANSWER HERE **
+     - First problem is incompatible types on line 7, meaning we cannot set the Item of bankAccountStorage to be an instance of Object, the compiler is enforcing for the item to be of type BancoAccount.
+     - The second error, on line 10, comes from us trying to get the item of bankAccountStorage into an instance of type Object. The method "deposit" does not exist in the Object class definition.
 
 Now replace:
 
@@ -68,11 +69,11 @@ Now replace:
    ```
    + How does this affect the compilation process?
    
-     ** YOUR ANSWER HERE **
+     The first error disappears because we are inserting into the bankAccountStorage an instance of the correct type.
    
    + What is the problem, if any?
    
-     ** YOUR ANSWER HERE **
+     The problem continues to be we are trying to call the method deposit of the BankAccount class definition in an instance of type Object instead.
    
 Now replace 
 
@@ -88,7 +89,8 @@ with
 
    + Does it still compile?
 
-     ** YOUR ANSWER HERE **
+     - Not without fixing line 9
+     - With line 9 fixed then yes
 
 Finally, replace
 
