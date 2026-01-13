@@ -33,11 +33,14 @@ creating two different storage objects with two different type specialisations:
    ```
    + What are the reasons for using generics here?
    
-     ** YOUR ANSWER HERE **
+     - We are using the Storage class, which can hold a single object of any type. We want to specify the type of object that will be held inside for error checking and handling.
+     - We want the object instances to only hold the type of object we are declaring, and then we want java to enforce this as soon as possible.
    
    + What are the benefits?
    
-     ** YOUR ANSWER HERE **
+     - Early detection of type mismatch
+     - Type enforcing when adding an object to the storage instance.
+     - Type definition so that we know how to handle the object inside the storage instance.
 
 Add the following code to your `Example1` class:
 
